@@ -1,7 +1,7 @@
 display-hals := libgralloc libgenlock libcopybit
 display-hals += libhwcomposer liboverlay libqdutils libexternal libqservice
 display-hals += libmemtrack
-ifneq ($(USE_DEVICE_SPECIFIC_LIBLIGHT),true)
+ifneq ($(TARGET_PROVIDES_LIBLIGHT),true)
 display-hals += liblight
 endif
 
